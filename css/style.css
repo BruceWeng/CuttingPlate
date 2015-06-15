@@ -1,0 +1,55 @@
+@charset "UTF-8";
+/**
+ *
+ * @authors Your Name (you@example.org)
+ * @date    2015-06-15 17:38:46
+ * @version $Id$
+ */
+html, body, p, ul, li, ol, dl, h1, h2, h3, h4, h5, h6{
+  margin: 0;
+  padding: 0;
+ }
+ html, body {
+  font-family: helvetica, arial, sans-serif;
+  font-size: 16px;
+ }
+
+ /*clear fix*/
+ .clear:before, .clear:after {
+  content:"\0020";
+  display:block;
+  height: 0;
+  overflow: hidden;
+ }
+ .clear:after {
+  clear: both;
+ }
+
+ .nav {
+  position: relative;
+  color: #7b7b7b;
+ }
+
+  .nav h1 {
+  font-weight: normal;
+  font-size: 20px;
+  padding: 8px 20px;
+  line-height: 1;
+ }
+ .nav ul {
+  position: absolute;
+  right: 0;
+  top: 0;
+  list-style: none;
+ }
+ .nav li {
+  float: left;
+  color: #7b7b7b;
+ }
+ .nav a {
+  display: block;
+  padding: 10px 20px 10px 20px;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+ }
